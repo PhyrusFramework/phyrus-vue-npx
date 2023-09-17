@@ -1,0 +1,21 @@
+{
+  "name": "@phyrus/vue-project",
+  "version": "0.0.1",
+  "description": "Phyrus VUE3 Framework",
+  "keywords": [
+    "phyrus",
+    "vue",
+    "framework",
+    "prime"
+  ],
+  "main": "index.js",
+  "author": "Phyrus Framework",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "path": "^0.12.7"
+  },
+  "bin": {
+    "@phyrus/vue-project": "init.js"
+  }
+}

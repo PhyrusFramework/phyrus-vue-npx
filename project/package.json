@@ -1,0 +1,67 @@
+{
+  "name": "@phyrus/vue-project",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "dev": "vue-cli-service serve",
+    "start": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "make:component": "node ./node_modules/@phyrus/vue/cli.js make:component",
+    "make:page": "node ./node_modules/@phyrus/vue/cli.js make:page",
+    "make:layout": "node ./node_modules/@phyrus/vue/cli.js make:layout",
+    "svg:pack": "node ./node_modules/@phyrus/vue/cli.js svg:pack"
+  },
+  "dependencies": {
+    "@phyrus/vue": "^0.0.1",
+    "core-js": "^3.8.3",
+    "vue": "^3.3.4",
+    "vue-facing-decorator": "^3.0.1",
+    "vue-router": "^4.2.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@types/vue": "^2.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-plugin-typescript": "^5.0.8",
+    "@vue/cli-service": "~5.0.0",
+    "@vue/eslint-config-typescript": "^9.1.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7",
+    "sass": "^1.63.6",
+    "sass-loader": "^13.3.2",
+    "typescript": "^4.5.5"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended",
+      "@vue/typescript"
+    ],
+    "parserOptions": {
+      "parser": "@typescript-eslint/parser"
+    },
+    "rules": {
+      "vue/multi-word-component-names": "off",
+      "vue/no-mutating-props": "off",
+      "no-useless-escape": "off"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ]
+}
