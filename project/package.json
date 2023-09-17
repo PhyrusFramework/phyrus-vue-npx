@@ -1,6 +1,6 @@
 {
   "name": "@phyrus/vue-project",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -14,7 +14,7 @@
     "svg:pack": "node ./node_modules/@phyrus/vue/cli.js svg:pack"
   },
   "dependencies": {
-    "@phyrus/vue": "^0.0.1",
+    "@phyrus/vue": "^0.0.3",
     "core-js": "^3.8.3",
     "vue": "^3.3.4",
     "vue-facing-decorator": "^3.0.1",
