@@ -19,12 +19,13 @@ import { App, translate } from '@phyrus/vue';
 
 import AppMain from './App.vue';
 import { createApp } from 'vue'
-import config from './config';
+import config from './config/config';
 import locales from './assets/translations/locales';
+import routes from './config/routes';
 
 const app = createApp(AppMain);
 
-App.init(app, config)
+App.init(app, config, routes)
 translate.initialize(locales);
 
 app.mount('#app');

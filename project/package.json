@@ -1,12 +1,14 @@
 {
   "name": "@phyrus/vue-project",
-  "version": "0.0.4",
-  "private": true,
+  "version": "0.0.1",
   "scripts": {
     "serve": "vite --port 8080",
-    "dev": "vite --port 8080",
     "start": "vite --port 8080",
-    "build": "vite build",
+    "dev": "vite --port 8080 --mode dev",
+    "prod": "vite --port 8080 --mode prod",
+    "build": "vite build --mode prod",
+    "build:dev": "vite build --mode dev",
+    "generate": "vite build --mode prod",
     "lint": "vue-cli-service lint",
     "make:component": "node ./node_modules/@phyrus/vue/cli.js make:component",
     "make:page": "node ./node_modules/@phyrus/vue/cli.js make:page",
@@ -14,7 +16,7 @@
     "svg:pack": "node ./node_modules/@phyrus/vue/cli.js svg:pack"
   },
   "dependencies": {
-    "@phyrus/vue": "^0.0.3",
+    "@phyrus/vue": "^0.0.4",
     "vue": "^3.3.4",
     "vue-facing-decorator": "^3.0.1",
     "vue-router": "^4.2.2"
