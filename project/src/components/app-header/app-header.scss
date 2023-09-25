@@ -1,5 +1,15 @@
-$headerSpace: 70px;
 
-.app-header {
-    height: $headerSpace;
+nav.app-header {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(221, 221, 221);
+
+    ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 20px;
+        list-style: none;
+    }
 }

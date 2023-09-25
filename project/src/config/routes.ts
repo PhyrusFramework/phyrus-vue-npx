@@ -1,9 +1,9 @@
-import { IRouter } from '@phyrus/vue';
+import { IRoutes } from '@phyrus/vue';
 
 import HomePage from "../pages/home/home.vue";
 import DefaultLayout from "../layouts/default/default.vue";
 
-const routes : IRouter = {
+const routes : IRoutes = {
     
     layouts: {
         default: DefaultLayout

@@ -1,3 +1,7 @@
-import { defineComponent } from "vue";
+import { Component, Vue, toNative } from "vue-facing-decorator";
 
-export default defineComponent({})
+@Component({ })
+class HomePage extends Vue {
+
+}
+export default toNative(HomePage);

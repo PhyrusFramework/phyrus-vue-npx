@@ -27,6 +27,9 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  optimizeDeps: {
+    include: ['moment-timezone', 'highlight.js']
+  },
   build: {
     chunkSizeWarningLimit: 1700 * 1024,
     sourcemap: false,
