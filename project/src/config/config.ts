@@ -10,7 +10,9 @@ const config : IAppConfig = {
         url: import.meta.env._API_URL
     },
 
-    /*primevue: {
+    /*cookieConsent: true, // Display cookie consent dialog
+
+    primevue: {
         ripple: true
     },*/
 

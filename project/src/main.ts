@@ -15,17 +15,26 @@ import '@phyrus/vue/css/styles.css';
 import './variables.scss';
 //////////////////////////
 
-import { App, translate } from '@phyrus/vue';
+import { createApp } from 'vue';
+import { App, AppPage, translate } from '@phyrus/vue';
 
 import AppMain from './App.vue';
-import { createApp } from 'vue'
 import config from './config/config';
 import routes from './config/routes';
+import http from './config/http';
 import locales from './assets/translations/locales';
 
+// Create APP
 const app = createApp(AppMain);
 
-App.init(app, config, routes)
-translate.initialize(locales);
+// Initialize Phyrus
+App.init(app, config, routes);
+app.component('app-page', AppPage);
 
+// Initialize things here:
+
+http();                         // HTTP Client configuration
+translate.initialize(locales);  // Languages
+
+// Mount app
 app.mount('#app');
