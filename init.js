@@ -16,6 +16,10 @@ const copyTemplate = (source, destination) => {
       fs.copyFileSync(sourcePath, destPath);
     }
   }
+
+  const sourcePath = path.join(source, '/.gitignore');
+  const destPath = path.join(destination, '/.gitignore');
+  fs.copyFileSync(sourcePath, destPath);
 };
 
 // Usage: init <project-name>

@@ -14,7 +14,7 @@ function renderChunks(deps) {
 // https://vitejs.dev/config/
 export default defineConfig({
 
-  envDir: 'environments',
+  envDir: 'src/config/environments',
   envPrefix: '_',
 
   plugins: [vue()],

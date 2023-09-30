@@ -6,13 +6,7 @@ const config : IAppConfig = {
         default: 'en'
     },
 
-    api: {
-        url: import.meta.env._API_URL
-    },
-
-    /*cookieConsent: true, // Display cookie consent dialog
-
-    primevue: {
+    /*primevue: {
         ripple: true
     },*/
 

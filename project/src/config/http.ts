@@ -10,7 +10,7 @@ export default () => {
     - Setup token refresh
     */
 
-    http.baseUrl = Config.get('api.url');
+    http.baseURL = import.meta.env._API_URL;
 
     // Read documentation for more...
 
