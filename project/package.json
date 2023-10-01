@@ -16,7 +16,7 @@
     "svg:pack": "node ./node_modules/@phyrus/vue/cli svg:pack"
   },
   "dependencies": {
-    "@phyrus/vue": "^0.1.83",
+    "@phyrus/vue": "^0.1.86",
     "vue": "^3.3.4",
     "vue-facing-decorator": "^3.0.1",
     "vue-router": "^4.2.2"
