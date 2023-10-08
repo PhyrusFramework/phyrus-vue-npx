@@ -17,9 +17,31 @@ const copyTemplate = (source, destination) => {
     }
   }
 
-  const sourcePath = path.join(source, '/.gitignore');
-  const destPath = path.join(destination, '/.gitignore');
-  fs.copyFileSync(sourcePath, destPath);
+  fs.writeFileSync(destination + '/public/.htaccess', `<ifModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule (.*) index.html [QSA,L]
+</ifModule>`);
+
+  fs.writeFileSync(destination +'/.gitignore', `.DS_Store
+  node_modules
+  
+  # Log files
+  npm-debug.log*
+  yarn-debug.log*
+  yarn-error.log*
+  pnpm-debug.log*
+  
+  # Editor directories and files
+  .idea
+  .vscode
+  *.suo
+  *.ntvs*
+  *.njsproj
+  *.sln
+  *.sw?
+  `);
 };
 
 // Usage: init <project-name>
